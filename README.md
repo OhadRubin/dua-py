@@ -23,6 +23,10 @@ When you install a PyPI wheel, the compiled Rust extension includes the
 `dua-cli` library code and its Rust dependencies. You do not need to install the
 standalone `dua` binary separately.
 
+PyPI wheels are currently built for macOS and Linux. Windows wheels are not
+published because `dua-cli` currently requires an unstable Rust feature for its
+Windows library build.
+
 When pip falls back to the source distribution, the `dua-cli` source is not
 vendored into this repository. The build uses `Cargo.toml` and `Cargo.lock`, so
 the machine installing from source needs Rust/Cargo and access to crates.io to

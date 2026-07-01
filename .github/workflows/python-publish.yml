@@ -24,9 +24,6 @@ jobs:
           - os: macos-latest
             target: universal2-apple-darwin
             manylinux: "auto"
-          - os: windows-latest
-            target: x64
-            manylinux: "auto"
 
     steps:
       - uses: actions/checkout@v4
