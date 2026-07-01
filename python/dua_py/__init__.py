@@ -8,6 +8,8 @@ from typing import Any, Iterable
 
 from . import _native
 
+__version__ = "0.1.0"
+
 
 @dataclass(frozen=True)
 class Entry:
@@ -98,4 +100,4 @@ def _normalize_paths(
     return [fsdecode(fspath(path)) for path in paths]
 
 
-__all__ = ["Entry", "scan", "walk"]
+__all__ = ["Entry", "__version__", "scan", "walk"]

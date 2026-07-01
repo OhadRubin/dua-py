@@ -8,6 +8,26 @@ A minimal Python interface around the Rust traversal engine from
 uses PyO3 and maturin to run that traversal, integrate the emitted events into
 the graph, and return nested Python objects that keep the same tree shape.
 
+## Install
+
+```bash
+pip install dua-py
+```
+
+## What gets bundled
+
+`dua-py` uses the Rust library API from `dua-cli`; it does not shell out to the
+`dua` command-line executable.
+
+When you install a PyPI wheel, the compiled Rust extension includes the
+`dua-cli` library code and its Rust dependencies. You do not need to install the
+standalone `dua` binary separately.
+
+When pip falls back to the source distribution, the `dua-cli` source is not
+vendored into this repository. The build uses `Cargo.toml` and `Cargo.lock`, so
+the machine installing from source needs Rust/Cargo and access to crates.io to
+fetch and compile the Rust dependencies.
+
 ## Install for development
 
 ```bash

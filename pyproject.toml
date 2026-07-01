@@ -9,17 +9,30 @@ description = "Minimal Python bindings for dua-cli traversal trees"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
+license-files = ["LICENSE"]
 authors = [{ name = "Ohad Rubin" }]
+keywords = ["dua", "disk-usage", "filesystem", "pyo3", "rust"]
 classifiers = [
     "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Programming Language :: Rust",
     "Topic :: System :: Filesystems",
 ]
 
 [project.urls]
-Homepage = "https://github.com/ohadr/dua-py"
-Source = "https://github.com/ohadr/dua-py"
+Homepage = "https://github.com/OhadRubin/dua-py"
+Source = "https://github.com/OhadRubin/dua-py"
+Issues = "https://github.com/OhadRubin/dua-py/issues"
 
 [tool.maturin]
 python-source = "python"

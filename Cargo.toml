@@ -5,6 +5,9 @@ edition = "2021"
 license = "MIT"
 description = "Minimal Python bindings for dua-cli traversal trees"
 repository = "https://github.com/ohadr/dua-py"
+readme = "README.md"
+keywords = ["disk-usage", "filesystem", "python", "pyo3"]
+categories = ["api-bindings", "filesystem"]
 
 [lib]
 name = "_native"
@@ -13,4 +16,4 @@ crate-type = ["cdylib"]
 [dependencies]
 dua-cli = { version = "2.37.1", default-features = false }
 petgraph = "0.8.3"
-pyo3 = "0.29.0"
+pyo3 = { version = "0.29.0", features = ["abi3-py310"] }
