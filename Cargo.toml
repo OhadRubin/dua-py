@@ -1,0 +1,16 @@
+[package]
+name = "dua-py"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Minimal Python bindings for dua-cli traversal trees"
+repository = "https://github.com/ohadr/dua-py"
+
+[lib]
+name = "_native"
+crate-type = ["cdylib"]
+
+[dependencies]
+dua-cli = { version = "2.37.1", default-features = false }
+petgraph = "0.8.3"
+pyo3 = "0.29.0"
